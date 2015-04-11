@@ -5,7 +5,7 @@ import {
 from 'ember-qunit';
 import Ember from 'ember';
 
-moduleFor('controller:sample', {
+moduleFor('controller:samples/1', {
 	// Specify the other units that are required for this test.
 	// needs: ['controller:foo']
 });
