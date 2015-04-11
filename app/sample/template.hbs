@@ -1,0 +1,13 @@
+<h2>rooms </h2>
+{{input value=addText}}
+<button {{action 'add' addText}}>Add</button>
+<ul>
+{{#each model as |x index|}}
+	{{log x}}
+	<li>{{index}}: {{x.title}} <button {{action 'remove' x}}>Remove</button></li>
+{{/each}}
+</ul>
+{{data.id}} {{data.name}}
+{{x}}
+{{y}}
+{{outlet}}
