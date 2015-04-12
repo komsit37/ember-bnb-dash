@@ -23,6 +23,11 @@ var app = new EmberApp();
 //var day = moment('Dec 25, 1995');
 app.import('bower_components/moment/moment.js');
 app.import('bower_components/d3/d3.js');
+
+app.import('bower_components/crossfilter/crossfilter.js');
+app.import('bower_components/dc.js/dc.js');
+app.import('bower_components/dc.js/dc.css');
+
 app.import('bower_components/nvd3/build/nv.d3.js');
 app.import('bower_components/nvd3/build/nv.d3.css');
 
