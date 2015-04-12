@@ -17,9 +17,16 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+//to use moment in code add below comment to header file
+//http://www.ember-cli.com/#standard-non-amd-asset
 // /* global moment */
 //var day = moment('Dec 25, 1995');
 app.import('bower_components/moment/moment.js');
+app.import('bower_components/d3/d3.js');
+app.import('bower_components/nvd3/build/nv.d3.js');
+app.import('bower_components/nvd3/build/nv.d3.css');
+
+app.import('bower_components/ember-nvd3/build/ember-nvd3.js');
 
 // import { raw as icAjaxRaw } from 'ic-ajax';
 //icAjaxRaw( /* ... */ );
