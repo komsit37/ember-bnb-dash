@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
 		});
 
 		chart.x2Axis.tickFormat(function(d) {
-			return d3.time.format('%b %d')(new Date());
+			return d3.time.format('%b %d')(new Date(d));
 		});
 		return chart;
 	},
@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
 		});
 
 		chart.x2Axis.tickFormat(function(d) {
-			return d3.time.format('%b %d')(new Date());
+			return d3.time.format('%b %d')(new Date(d));
 		});
 
 		chart.yAxis.tickFormat(d3.format(',.2f'));
