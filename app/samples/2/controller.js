@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import ajax from 'ic-ajax';
+/* global d3 */
 
 export default Ember.Controller.extend({
 	priceChart: function(chart) {
@@ -28,13 +28,13 @@ export default Ember.Controller.extend({
 		return chart;
 	},
 
-	onX: function(d, i) {
+	onX: function(d) {
 		return new Date(d.on);
 	},
-	priceY: function(d, i) {
+	priceY: function(d) {
 		return d.avail_price;
 	},
-	occY: function(d, i) {
+	occY: function(d) {
 		return d.occupied;
 	}
 });

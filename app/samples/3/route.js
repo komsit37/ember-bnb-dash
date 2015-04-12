@@ -1,4 +1,5 @@
 import Ember from 'ember';
+/* global d3 */
 
 export default Ember.Route.extend({
 	setupController: function(controller, model) {
@@ -26,7 +27,7 @@ export default Ember.Route.extend({
 		}
 
 		function stream_layers(n, m, o) {
-			if (arguments.length < 3) o = 0;
+			if (arguments.length < 3) {o = 0;}
 
 			function bump(a) {
 				var x = 1 / (0.1 + Math.random()),
@@ -40,8 +41,8 @@ export default Ember.Route.extend({
 			return d3.range(n).map(function() {
 				var a = [],
 					i;
-				for (i = 0; i < m; i++) a[i] = o + o * Math.random();
-				for (i = 0; i < 5; i++) bump(a);
+				for (i = 0; i < m; i++) {a[i] = o + o * Math.random();}
+				for (i = 0; i < 5; i++) {bump(a);}
 				return a.map(stream_index);
 			});
 		}
@@ -62,7 +63,7 @@ export default Ember.Route.extend({
 		var startDate = +(new Date());
 
 		function days(num) {
-			return num * 60 * 60 * 1000 * 24
+			return num * 60 * 60 * 1000 * 24;
 		}
 
 		function stream_index(d, i) {
@@ -77,7 +78,7 @@ export default Ember.Route.extend({
 		}
 
 		function stream_layers(n, m, o) {
-			if (arguments.length < 3) o = 0;
+			if (arguments.length < 3) {o = 0;}
 
 			function bump(a) {
 				var x = 1 / (0.1 + Math.random()),
@@ -91,8 +92,8 @@ export default Ember.Route.extend({
 			return d3.range(n).map(function() {
 				var a = [],
 					i;
-				for (i = 0; i < m; i++) a[i] = o + o * Math.random();
-				for (i = 0; i < 5; i++) bump(a);
+				for (i = 0; i < m; i++) {a[i] = o + o * Math.random();}
+				for (i = 0; i < 5; i++) {bump(a);}
 				return a.map(stream_index);
 			});
 		}
