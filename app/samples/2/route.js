@@ -3,6 +3,10 @@ import ajax from 'ic-ajax';
 
 export default Ember.Route.extend({
 	model: function(){
-		return ajax('dat');
+		var promises = {
+			dat: ajax('dat'),
+			dat2: ajax('dat2')
+		};
+		return Ember.RSVP.hash(promises);
 	}
 });
