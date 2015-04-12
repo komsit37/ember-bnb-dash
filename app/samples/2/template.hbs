@@ -1,8 +1,17 @@
 <h3>2</h3>
 {{log model}}
 <ul>
-{{#each model as |m|}}
+{{#each model.dat as |m|}}
 	<li>{{m.key}}</li>
 {{/each}}
 </ul>
+
+<div class="chart full">
+	{{nvd3-line-with-focus-chart data=model.dat customizeChart=priceChart x=onX y=priceY}}
+</div>
+
+<div class="chart full">
+	{{nvd3-line-with-focus-chart data=model.dat2 customizeChart=occChart x=onX y=occY}}
+</div>
+
 {{outlet}}
