@@ -16,3 +16,71 @@
 .chart.third {
   width: 33%;
 }
+
+.dc-chart g.row text {
+  /*fill: white;*/
+  fill: black;
+}
+
+.dc-chart.small g.row text {
+  /*fill: white;*/
+  fill: black;
+  font-size: 8px;
+}
+
+.jumbotron {
+  background-image: url("images/jumbotron_bg.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron h1{
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #e67e22;
+    border-color: #d35400;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffe6d1;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: ##ecf0f1;
+    background-color: #d35400;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: ##ffe6d1;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
