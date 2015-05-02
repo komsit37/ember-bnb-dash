@@ -28,6 +28,13 @@ export default Ember.Controller.extend({
 		return chart;
 	},
 
+	xdate: function(d) {
+		return new Date(d.x);
+	},
+	y: function(d) {
+		return d.y;
+	},
+
 	onX: function(d) {
 		return new Date(d.on);
 	},

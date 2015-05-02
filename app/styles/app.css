@@ -1,3 +1,10 @@
+
+.nvd3 .nv-groups .nv-point.hovergroup {
+    stroke-width: 5px;
+    stroke-opacity: 1;
+    stroke: black;
+}
+
 .chart {
   float:left;
   height: 500px;

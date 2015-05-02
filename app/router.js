@@ -13,4 +13,5 @@ export default Router.map(function() {
     this.route('dc');
     this.route('dc-ajax');
   });
+  this.resource('pricing', function() {});
 });

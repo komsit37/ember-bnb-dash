@@ -1,0 +1,19 @@
+<h3>Pricing</h3>
+{{log model}}
+<ul>
+{{#each model.dat as |m|}}
+	<li>{{m.key}}</li>
+{{/each}}
+</ul>
+
+<div>
+	{{selected.room}}, {{selected.date}}, {{selected.price}}, {{selected.status}}
+</div>
+<div class="chart full" id="price-chart">
+	{{nv-price-chart data=model.dat selectedDate="selectedDate"}}
+</div>
+
+<div class="chart full">
+</div>
+
+{{outlet}}
