@@ -1,6 +1,10 @@
 <h3>dc-ajax</h3>
-<div id="chart-ring-year"></div>
-<div id="chart-hist-spend"></div>
-<div id="chart-row-spenders"></div>
 
+<div id="left-chart" ></div>
+<div id="mid-chart"></div>
+<div id="right-chart"></div>
+<div id="data-table-spenders"></div>
+<span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
+                href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+<button {{action "resetFilter" target=view}}>Reset Filter</button>
 {{outlet}}
