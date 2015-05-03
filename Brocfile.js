@@ -22,6 +22,7 @@ var app = new EmberApp();
 // /* global moment */
 //var day = moment('Dec 25, 1995');
 app.import('bower_components/moment/moment.js');
+app.import('bower_components/colorbrewer/colorbrewer.js');
 app.import('bower_components/d3/d3.js');
 
 app.import('bower_components/crossfilter/crossfilter.js');
@@ -32,6 +33,10 @@ app.import('bower_components/nvd3/build/nv.d3.js');
 app.import('bower_components/nvd3/build/nv.d3.css');
 
 app.import('bower_components/ember-nvd3/build/ember-nvd3.js');
+
+app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', { destDir: 'assets' });
 
 // import { raw as icAjaxRaw } from 'ic-ajax';
 //icAjaxRaw( /* ... */ );

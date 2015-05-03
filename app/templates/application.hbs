@@ -1,3 +1,43 @@
-<h2 id="title">Welcome to Ember.js</h2>
+ <header class='masthead'>
+   <nav class='navbar navbar-default navbar-static-top' role='navigation'>
+     <div class='container-fluid'>
+       <div class='navbar-header'>
+         <button type='button' class='navbar-toggle'
+         data-toggle='collapse' 
+         data-target='#main-nav-collapse'>
+         <span class='sr-only'>Toggle navigation</span>
+         <span class='icon-bar'></span>
+         <span class='icon-bar'></span>
+         <span class='icon-bar'></span>
+       </button>
+       {{#link-to 'application' class='navbar-brand'}}yPricing{{/link-to}}
+     </div>
+     <div class='collapse navbar-collapse' id='main-nav-collapse'>
+       <ul class='nav navbar-nav'>
+         {{#link-to 'index' tagName='li' href=false}}
+         <a href="#">Home</a>
+         {{/link-to}}
+         {{#link-to 'pricing' tagName='li' href=false}}
+         <a href="#">Pricing</a>
+         {{/link-to}}         
+         {{#link-to 'samples.2' tagName='li' href=false}}
+         <a href="#">2</a>
+         {{/link-to}}
+         {{#link-to 'samples.3' tagName='li' href=false}}
+         <a href="#">3</a>
+         {{/link-to}}
+         {{#link-to 'samples.dc' tagName='li' href=false}}
+         <a href="#">dc</a>
+         {{/link-to}}
+         {{#link-to 'samples.dc-ajax' tagName='li' href=false}}
+         <a href="#">dc-ajax</a>
+         {{/link-to}}
+       </ul>
+     </div>
+   </div>
+ </nav>
+</header>
 
-{{outlet}}
+<section class='main-content'>
+ {{outlet}}
+</section>
